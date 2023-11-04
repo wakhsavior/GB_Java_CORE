@@ -5,6 +5,10 @@ import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Класс работы с заметками, хранит заметки в List в виде экземпляров Note
+ */
+
 public class NoteBook {
     private List<Note> notes = new ArrayList<>();
 
