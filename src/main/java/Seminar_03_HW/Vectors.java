@@ -1,4 +1,4 @@
-package Seminar_03;
+package Seminar_03_HW;
 
 import java.util.ArrayList;
 import java.util.Arrays;

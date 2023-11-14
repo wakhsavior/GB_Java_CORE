@@ -67,25 +67,29 @@ public class RandomSet {
                 mySet.addElement(10);
             }, TimeUnit.NANOSECONDS);
 
-            System.out.printf("Время выполнения добавления элемента при размере массива %d: %d\n", repeatCount, time);
+            System.out.printf("Время выполнения добавления элемента при размере массива %d: " +
+                    "%,9.3f ms\n", repeatCount, time/1_000_000.0);
 
             time = timer(() -> {
                 mySet.searchElem(10);
             }, TimeUnit.NANOSECONDS);
 
-            System.out.printf("Время выполнения поиска элемента при размере массива %d: %d\n", repeatCount, time);
+            System.out.printf("Время выполнения поиска элемента при размере массива %d: " +
+                    "%,9.3f ms\n", repeatCount, time/1_000_000.0);
 
             time = timer(() -> {
                 mySet.getRandomElem();
             }, TimeUnit.NANOSECONDS);
 
-            System.out.printf("Время выполнения доступа к случайному элементу при размере массива %d: %d\n", repeatCount, time);
+            System.out.printf("Время выполнения доступа к случайному элементу при размере массива %d: " +
+                    "%,9.3f ms\n", repeatCount, time/1_000_000.0);
 
             time = timer(() -> {
                 mySet.delElement(10);
             }, TimeUnit.NANOSECONDS);
 
-            System.out.printf("Время выполнения удаления элемента при размере массива %d: %d\n", repeatCount, time);
+            System.out.printf("Время выполнения удаления элемента при размере массива %d: " +
+                    "%,9.3f ms\n", repeatCount, time/1_000_000.0);
         }
 
     }
