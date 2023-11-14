@@ -1,4 +1,4 @@
-package Seminar_01_HW;
+package main.java.Seminar_01_HW;
 
 import java.util.Date;
 

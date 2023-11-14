@@ -1,0 +1,7 @@
+services:
+  app:
+    image: bellsoft/liberica-openjdk-alpine:11.0.16.1-1
+    command: javac -sourcepath /app/src/ /app/src/main/java/Seminar_01_HW/Main.java -d /app/out
+    volumes:
+      - ./bin:/app/out
+      - ./src:/app/src
