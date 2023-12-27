@@ -1,4 +1,4 @@
-package Seminar_06;
+package Seminar_05;
 
 import java.util.*;
 
